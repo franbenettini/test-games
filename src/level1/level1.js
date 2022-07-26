@@ -5,169 +5,175 @@
 // Pista: "console.log()" NO fucionará.
 // No cambies los nombres de las funciones.
 
-export function devolverString() {
-  // Tu código:
-
-  return;  
-}
-
-export function suma() {
- // Tu código:
-
-  return;  
-}
-
-export function resta() {
- // Tu código:
-
-  return;
-}
-
-export function multiplica() {
-  // Tu código:
-
-  return;
-}
-
-export function divide() { 
-  // Tu código:
-
-  return;
-}
-
-export function sonIguales() {  
-  // Tu código:
-
-  return;  
-}
-
-export function tienenMismaLongitud() {  
-  // Tu código:
-
-  return;
-}
-
-export function menosQueNoventa() {  
-  // Tu código:
-
-  return;
-}
-
-export function mayorQueCincuenta() {  
-  // Tu código:
-
-  return;
-}
-
-export function obtenerResto() {  
-  // Tu código:
-
-  return;
-}
-
-export function esPar() {
-  // Tu código:
-
-  return;
-}
-
-export function esImpar() {  
-  // Tu código:
-
-  return;
-}
-
-export function elevarAlCuadrado() {  
-  // Tu código:
-
-  return;
-}
-
-export function elevarAlCubo() { 
-  // Tu código:
-
-  return;
-}
-
-export function elevar() {  
-  // Tu código:
-
-  return;
-}
-
-export function redondearNumero() {  
-  // Tu código:
-
-  return;
-}
-
-export function redondearHaciaArriba() { 
-  // Tu código:
-
-  return;
-}
-
-export function numeroRandom() {  
-  // Tu código:
-
-  return;
-}
-
-export function esPositivo() {
-  // Tu código:
+export function devolverString(str) {
   
-  return;
+  return str.toString();
 }
 
-export function agregarSimboloExclamacion() {  
-  // Tu código:
-
-  return;
+export function suma(x, y) {
+ 
+  return x + y;  
 }
 
-export function combinarNombres() {
-  // Tu código:
+export function resta(x,y) {
 
-  return;
+  return x - y;
 }
 
-export function obtenerSaludo() {
-  // Tu código:
+export function multiplica(x,y) {
 
-  return;
+  return x*y;
 }
 
-export function obtenerAreaRectangulo() {  
-  // Tu código:
+export function divide(x,y) { 
 
-  return;
+  if (y <= 0) return 'No se puede dividir'
+
+  return x/y;
+}
+
+export function sonIguales(x,y) {  
+
+  return x===y;  
+}
+
+export function tienenMismaLongitud(str1, str2) {  
+
+  if ((str1.length) === (str2.length)){
+    return true
+  } else {
+    return false
+  }
+}
+
+export function menosQueNoventa(num) {  
+
+  if (num < 90) {
+    return true
+  } else {
+    return false
+  }
+}
+
+export function mayorQueCincuenta(num) {  
+
+  if (num > 50){
+    return true
+  } else {
+    return false
+  }
+}
+
+export function obtenerResto(x, y) {  
+
+  let resto = x%y;
+
+  return resto;
+}
+
+export function esPar(num) {
+
+  if (num % 2 === 0){
+    return true
+  } else {
+    return false
+  }
+}
+
+export function esImpar(num) {  
+
+  return num % 2 === 1;
+}
+
+export function elevarAlCuadrado(num) {  
+
+  return num * num;
+}
+
+export function elevarAlCubo(num) { 
+
+  return (num * num)*num;
+}
+
+export function elevar(num, exponent) {  
+
+  return Math.pow(num, exponent);
+}
+
+export function redondearNumero(num) {  
+
+  return Math.round(num);
+}
+
+export function redondearHaciaArriba(num) { 
+
+  return Math.ceil(num);
+}
+
+export function numeroRandom(num) {  
+
+  return Math.random(num);
+}
+
+export function esPositivo(numero) {
+  
+  if (numero>0){
+    return "Es positivo"
+  } else if (numero===0) {
+    return false
+  }else{
+    return "Es negativo"
+  }
+}
+
+export function agregarSimboloExclamacion(str) {  
+
+  return str.concat("!");
+}
+
+export function combinarNombres(firstName, lastName) {
+
+  return firstName + ' ' + lastName;
+}
+
+export function obtenerSaludo(name) {
+
+  return `Hola ${name}!`;
+}
+
+export function obtenerAreaRectangulo(alto, ancho) {  
+
+  return (alto * ancho);
 }
 
 
-export function retornarPerimetro(){
-  // Tu código:
+export function retornarPerimetro(lado){
 
-  return;
+  return lado*4;
 }
 
 
-export function areaDelTriangulo(){
-  // Tu código:
+export function areaDelTriangulo(base, altura){
 
-  return;
+  return base * altura / 2;
 }
 
 
-export function deEuroAdolar(){
+export function deEuroAdolar(euro){
   //Supongamos que 1 euro equivale a 1.20 dólares.
-  // Tu código:
-
-  return;
+  
+  return (euro*1.2) / 1;
 }
 
 
-export function esVocal(){
-  // Tu código:
+export function esVocal(letra){
 
-  return;
+  let vocales = ["a" ,"e" ,"i" ,"o" , "u"];
+  if (letra.length > 1){
+    return "Dato incorrecto"
+  } else if (vocales.includes(letra)){
+    return "Es vocal"
+  } else {
+    return "Dato incorrecto"
+  }
 }
